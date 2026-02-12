@@ -37,6 +37,8 @@ npm run export
 2. In the repo go to **Settings → Pages**. Under "Build and deployment", set **Source** to **GitHub Actions**.
 3. Each push to `main` will run the workflow in `.github/workflows/deploy-pages.yml`, build the site, and deploy to GitHub Pages. The site will be available at `https://<username>.github.io/profile-web/`.
 
+   If the first run fails with "Get Pages site failed" or "Not Found", wait a minute after enabling Pages, then go to **Actions** → open the failed run → **Re-run all jobs**. The repo must be **public** for GitHub Free accounts.
+
 **Manual deploy:**
 
 1. **Build the site** (from this directory):
